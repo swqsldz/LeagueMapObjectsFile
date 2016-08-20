@@ -54,29 +54,6 @@ namespace LeagueMapObjectsFile
             }
         }
 
-        private static string GetStringFromChars(char[] chars)
-        {
-            string final = "";
-            int i = 0;
-            while (i < chars.Length && chars[i] != 0)
-            {
-                final += chars[i];
-                i++;
-            }
-            return final;
-        }
-        private static char[] GetCharsFromString(string str, int size)
-        {
-            char[] final = new char[size];
-            int i = 0;
-            while (i < size && i < str.Length)
-            {
-                final[i] = str[i];
-                i++;
-            }
-            return final;
-        }
-
         public class MapObjectsFileObject
         {
             public string Name;
@@ -164,5 +141,28 @@ namespace LeagueMapObjectsFile
             Nav = 8,
             Info = 9,
             LevelProp = 10 };
+
+        private static string GetStringFromChars(char[] chars)
+        {
+            string final = "";
+            int i = 0;
+            while (i < chars.Length && chars[i] != 0)
+            {
+                final += chars[i];
+                i++;
+            }
+            return final;
+        }
+        private static char[] GetCharsFromString(string str, int size)
+        {
+            char[] final = new char[size];
+            int i = 0;
+            while (i < size && i < str.Length)
+            {
+                final[i] = str[i];
+                i++;
+            }
+            return final;
+        }
     }
 }
