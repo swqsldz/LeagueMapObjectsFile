@@ -138,6 +138,8 @@ namespace LeagueMapObjectsFile
             Barrack = 3,
             Nexus = 4,
             Turret = 5,
+            Shop = 6,
+            Lake = 7,
             Nav = 8,
             Info = 9,
             LevelProp = 10 };
